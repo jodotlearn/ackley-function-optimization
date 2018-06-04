@@ -36,15 +36,15 @@ public class AckleyFunctionOptimization extends Application{
 	private static Map<String,List<Double>> data;
 
 	/**
-	 * java -jar pso.jar swarm_size iterations run_times
+	 * java -jar pso.jar swarm_size dimension position_limit velocity_limit iterations run_times
 	 * sample:
-	 * 	swarm size is 50
+	 * 	swarm size is 100
 	 * 	dimension is 2
 	 * 	position range is between -100 ~ 100
 	 * 	velocity range is -1.5 ~ 1.5
 	 * 	iteration 500 times
 	 * 	run 30 times to calculate the average
-	 * java -jar pso.jar 50 2 100 1.5 1000 30
+	 * java -jar pso.jar 100 2 100 1.5 1000 30
 	 */
 	public static void main( String[] args ){
 		int particleCount = Integer.valueOf(args[0]);
